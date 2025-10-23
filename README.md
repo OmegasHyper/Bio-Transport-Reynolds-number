@@ -45,9 +45,8 @@ The logarithmic plot confirms the energy loss shift: steep decline in the lamina
 ### 4. CFD Flow Visualization 
 The OpenFOAM result illustrates the stable, dominant primary vortex formed by intense momentum transfer under high **Re** conditions.
 
-<img width="1143" height="796" alt="Image" src="https://github.com/user-attachments/assets/3fe4f7d4-c9eb-49e2-8be7-95aed9fe5cef" />
-<img width="1140" height="812" alt="Image" src="https://github.com/user-attachments/assets/efed3a57-490d-4edb-836e-501af95bc553" />
-
+<img width="1132" height="794" alt="Image" src="https://github.com/user-attachments/assets/6acdffa5-e56b-429b-8182-ba88706a7d1a" />
+<img width="1132" height="795" alt="Image" src="https://github.com/user-attachments/assets/00610b43-f987-4fc6-b6a6-2fd66a731e9d" />
 
 ## 📁 Repository Structure
 
