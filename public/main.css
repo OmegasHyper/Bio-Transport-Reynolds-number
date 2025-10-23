@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #3b82f6, #06b6d4);
+}
+
+.main-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-image: url("1000263608.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  width: 90%;
+  max-width: 450px;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+h1 {
+  color: #1e3a8a;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+label {
+  display: block;
+  text-align: left;
+  margin-top: 15px;
+  font-weight: 500;
+}
+
+input {
+  width: 100%;
+  padding: 15px;
+  margin-top: 5px;
+  border: 1.5px solid #d1d5db;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 5px rgba(59,130,246,0.4);
+  transform: scale(1.12, 1.12);
+}
+
+button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10%;
+  background: #2563eb;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #1e40af;
+}
+
+.result {
+  margin-top: 10px;
+  font-size: 2.2rem;
+  color: #1e3a8a;
+  font-weight: 700;
+}
+
+.regime {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.formula {
+  margin-top: 15px;
+  background: #f1f5f9;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  color: #374151;
+}
+
+footer {
+  margin-top: 20px;
+  font-size: 0.8rem;
+  color: #6b7280;
+}
+
+.red {
+  color: rgb(138, 39, 39)
+}
+
+.yellow {
+  color: rgb(205, 208, 116)
+}
+
+.blue {
+  color: rgb(18, 23, 154)
+}
+
+#loader{
+  display: none;
+  border: 5px solid #3498db;
+  border-top: #f3f3f3;
+  border-bottom: #f3f3f3;
+  border-radius: 50%;
+  width: 40px; 
+  height: 40px;
+  
+  animation: spin 0.9s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.res-load-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
