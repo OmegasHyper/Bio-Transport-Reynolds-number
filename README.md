@@ -33,7 +33,7 @@ The application provides instant, color-coded regime classification.
 
 ![Interactive Calculator Demo](assets/interactiveCalc.gif)
 
-[▶️ Watch Full Video (MP4)](assets/interactiveCalc.mp4)
+[▶️ Watch Full Video] (MP4)](https://youtu.be/4VVwbTYZZwE?si=gkiFMfW2Aua4aszy)
 
 
 ### 2. Profile Transformation
