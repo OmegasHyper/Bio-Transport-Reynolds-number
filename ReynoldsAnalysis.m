@@ -77,14 +77,59 @@ for fluid_idx = 1:size(fluids, 1)
     end
 end
 
-% Display sample results
-fprintf('Sample Results (first 20 entries):\n');
-disp(results_table(1:min(20, height(results_table)), :));
+% -----------------------------------------------------------------
+% --- Modified display logic to ensure diversity in fluids and systems ---
+% -----------------------------------------------------------------
+fprintf('Sample Results (Selected to show fluid and regime variation):\n');
+selected_indices = [];
+unique_fluids = unique(results_table.Fluid);
+
+% 1. Ensure the first entry of each fluid appears (usually Laminar)
+for i = 1:length(unique_fluids)
+    fluid_name = unique_fluids{i};
+    match_index = find(strcmp(results_table.Fluid, fluid_name), 1, 'first');
+    if ~isempty(match_index)
+        selected_indices = [selected_indices; match_index];
+    end
+end
+
+% 2. Select additional entries for key fluids (Blood, Water, Air) to show regime transition
+fluids_for_transition = {'Water at 20°C', 'Blood (37°C)', 'Air at 20°C'};
+
+for i = 1:length(fluids_for_transition)
+    current_fluid = fluids_for_transition{i};
+    
+    % A. Search for the Transitional case
+    trans_index = find(strcmp(results_table.Fluid, current_fluid) & ...
+                       strcmp(results_table.Regime, 'Transitional'), 1, 'first');
+    if ~isempty(trans_index) && ~ismember(trans_index, selected_indices)
+        selected_indices = [selected_indices; trans_index];
+    end
+
+    % B. Search for the Turbulent case
+    turb_index = find(strcmp(results_table.Fluid, current_fluid) & ...
+                      strcmp(results_table.Regime, 'Turbulent'), 1, 'first');
+    if ~isempty(turb_index) && ~ismember(turb_index, selected_indices)
+        selected_indices = [selected_indices; turb_index];
+    end
+end
+
+% 3. Sort the selected rows alphabetically by fluid name
+selected_data = results_table(selected_indices, :);
+selected_data = sortrows(selected_data, 'Fluid'); % Sort fluids alphabetically
+
+% Display the final table
+if ~isempty(selected_data)
+    disp(selected_data);
+else
+    fprintf('No results to display.\n');
+end
 
 % Summary statistics
 fprintf('\nFlow Regime Summary:\n');
 regime_summary = groupsummary(results_table, 'Regime');
 disp(regime_summary);
+
 
 %% Part 2: Flow Profile Visualization
 
