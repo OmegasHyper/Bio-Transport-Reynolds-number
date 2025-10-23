@@ -22,7 +22,6 @@ app.post('/calculate', (req, res) => {
             const lines = stdout.trim().split('\n');
             const result = parseFloat(lines[lines.length - 1]);
             res.json({ result });
-            console.log("pass")
         }
     });
 });
