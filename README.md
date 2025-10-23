@@ -1,4 +1,6 @@
-# 🔬 Reynolds Number Flow Analysis (Biotransport SBEG201)
+# Reynolds Number Flow Analysis (Biotransport SBEG201)
+
+<img width="1280" height="853" alt="Image" src="https://github.com/user-attachments/assets/2aaf93bc-d708-48d0-b5ab-966704b41cc6" />
 
 This repository contains the computational analysis of the **Reynolds Number ($\mathbf{Re}$)** and its role in classifying fluid flow into Laminar, Transitional, and Turbulent regimes. The project uses advanced software integration to fulfill analytical and visualization requirements.
 
@@ -26,25 +28,26 @@ This repository contains the computational analysis of the **Reynolds Number ($\
 
 ### 1. Hybrid Calculator Verification
 The application provides instant, color-coded regime classification.
-
-> **[Insert Image of GUI showing Green (Laminar) and Red (Turbulent) results here]**
+<img width="1044" height="726" alt="Image" src="https://github.com/user-attachments/assets/90b903d7-2364-459b-950c-e88262847c4e" />
+<img width="1065" height="729" alt="Image" src="https://github.com/user-attachments/assets/caa5a726-7278-44c6-9c66-e5cb10c7901d" />
 
 ### 2. Profile Transformation
 Visualization shows the fundamental shift from the **Parabolic** profile (Laminar, $\mathbf{V_{\text{max}} = 2 V_{\text{avg}}}$) to the **Blunt** turbulent profile.
-
-> **[Insert Image of Velocity Profiles vs Reynolds Number (Laminar vs. Turbulent) here]**
+<img width="707" height="725" alt="Image" src="https://github.com/user-attachments/assets/4836f3e8-92e6-4738-967c-608fdbf2550c" />
 
 ### 3. Frictional Resistance Analysis
 The logarithmic plot confirms the energy loss shift: steep decline in the laminar regime ($\mathbf{f \propto 1/Re}$) versus a shallow decline in the turbulent regime ($\mathbf{f \propto 1/Re^{0.25}}$).
 
-> **[Insert Image of Darcy Friction Factor vs Reynolds Number Plot here]**
 
-### 4. CFD Flow Visualization (Bonus)
+<img width="725" height="731" alt="Image" src="https://github.com/user-attachments/assets/59c681d0-9c82-4b85-93f7-34f299f657f0" />
+
+
+### 4. CFD Flow Visualization 
 The OpenFOAM result illustrates the stable, dominant primary vortex formed by intense momentum transfer under high **Re** conditions.
 
-> **[Insert Image of OpenFOAM/CFD Lid-Driven Cavity Flow result here]**
+<img width="1143" height="796" alt="Image" src="https://github.com/user-attachments/assets/3fe4f7d4-c9eb-49e2-8be7-95aed9fe5cef" />
+<img width="1140" height="812" alt="Image" src="https://github.com/user-attachments/assets/efed3a57-490d-4edb-836e-501af95bc553" />
 
-***
 
 ## 📁 Repository Structure
 
