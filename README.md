@@ -30,6 +30,7 @@ This repository contains the computational analysis of the **Reynolds Number ($\
 The application provides instant, color-coded regime classification.
 <img width="1044" height="726" alt="Image" src="https://github.com/user-attachments/assets/90b903d7-2364-459b-950c-e88262847c4e" />
 <img width="1065" height="729" alt="Image" src="https://github.com/user-attachments/assets/caa5a726-7278-44c6-9c66-e5cb10c7901d" />
+<video width="1065" height="710" src="assets/interactiveCalc.mp4">
 
 ### 2. Profile Transformation
 Visualization shows the fundamental shift from the **Parabolic** profile (Laminar, $\mathbf{V_{\text{max}} = 2 V_{\text{avg}}}$) to the **Blunt** turbulent profile.
